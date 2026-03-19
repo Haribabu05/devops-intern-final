@@ -1,0 +1,14 @@
+Loki Setup
+
+1. Started Loki using Docker:
+docker run -d --name loki -p 3100:3100 grafana/loki:2.9.0
+
+2. Verified Loki is running:
+docker ps
+
+3. Loki runs on:
+http://localhost:3100
+
+4. Logs can be forwarded from Docker or Nomad to Loki.
+
+5. Logs can be viewed using Grafana by connecting Loki as a data source.
